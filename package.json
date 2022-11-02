@@ -1,0 +1,46 @@
+{
+  "name": "ts-tg-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot template in TypeScript ",
+  "main": "build/index.js",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && npm run copyFiles && node .",
+    "pretty": "npx prettier --write src",
+    "copyFiles": "cp -r src/locales build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExposedCat/ts-tg-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "api",
+    "typescript",
+    "template"
+  ],
+  "author": "ExposedCat",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ExposedCat/ts-tg-bot/issues"
+  },
+  "homepage": "https://github.com/ExposedCat/ts-tg-bot#readme",
+  "dependencies": {
+    "@grammyjs/i18n": "^0.5.1",
+    "dotenv": "^16.0.1",
+    "grammy": "^1.10.1",
+    "mongodb": "^4.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.4",
+    "@types/pg": "^8.6.5",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=4",
+    "npm": ">=2"
+  }
+}

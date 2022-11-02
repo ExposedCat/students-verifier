@@ -1,0 +1,5 @@
+export { controller as updateVerification } from './update-verification.js'
+export { controller as any } from './any-group-message.js'
+export { controller as studentId } from './photo.js'
+export { controller as start } from './start.js'
+export { controller as stop } from './stop.js'

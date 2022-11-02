@@ -1,0 +1,12 @@
+{
+    "state": {
+        "started": "Started, ${username}\nAdmins: ${admins}",
+        "stopped": "Stopped, ${username}"
+    },
+    "captcha": "${username}, please send me clear photo of your student ID as a private message",
+    "response": {
+        "approve": "Student ID approved",
+        "reject": "Student ID rejected"
+    },
+    "request": "<a href='tg://user?id=${studentId}'>${studentName}</a> sent his/her student ID"
+}
