@@ -8,6 +8,9 @@ import {
 
 const controller = new Composer<CustomContext>()
 controller.chatType(['group', 'supergroup']).on('message', async ctx => {
+	if (ctx.from.is_bot) {
+		return
+	}
 	const verified = await getStudentVerification(ctx.db.students, ctx.from.id)
 	if (verified === false) {
 		const success = await clearMessageAndRestrict(ctx)

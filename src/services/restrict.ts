@@ -10,7 +10,8 @@ async function unrestrictUser(ctx: CustomContext, studentId: number) {
 					can_send_messages: true,
 					can_send_polls: true,
 					can_add_web_page_previews: true,
-					can_send_media_messages: true
+					can_send_media_messages: true,
+					can_send_other_messages: true
 				},
 				{
 					until_date: Date.now() // Restrict forever
@@ -24,16 +25,16 @@ async function unrestrictUser(ctx: CustomContext, studentId: number) {
 
 async function clearMessageAndRestrict(ctx: CustomContext) {
 	try {
-		await ctx.deleteMessage()
 		await ctx.restrictAuthor(
 			{ can_send_messages: false },
 			{
 				until_date: Date.now() // Restrict forever
 			}
 		)
+		await ctx.deleteMessage()
 		return true
 	} catch {
-		console.log(`Restricted`)
+		console.log(`Can't restrict`)
 		return false
 	}
 }
