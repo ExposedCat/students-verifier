@@ -3,7 +3,7 @@
         "started": "Started, ${username}\nAdmins: ${admins}",
         "stopped": "Stopped, ${username}"
     },
-    "captcha": "${username}, please send me a clear photo of your student ID as a private message",
+    "captcha": "${username}, надішліть, будь ласка, чітке фото вашого студентського квитка <u>приватним повідомленням</u>",
     "response": {
         "approve": "Student ID approved",
         "reject": "Student ID rejected"
