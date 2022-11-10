@@ -34,7 +34,7 @@ async function clearMessageAndRestrict(ctx: CustomContext) {
 		await ctx.deleteMessage()
 		return true
 	} catch {
-		console.log(`Can't restrict`)
+		// console.log(`Can't restrict`)
 		return false
 	}
 }

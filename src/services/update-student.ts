@@ -26,7 +26,7 @@ async function updateStudentVerification(
 		)
 
 	await operation.execute()
-	console.log(`Set ${state} for ${id}`)
+	// console.log(`Set ${state} for ${id}`)
 }
 
 export { updateStudentVerification }
